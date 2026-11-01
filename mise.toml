@@ -1,0 +1,13 @@
+[tasks]
+install = "bash ./scripts/install_deps.sh"
+
+api-run = "(cd ../ama-api && bash build.sh run)"
+api-db = "(cd ../ama-api && bash build.sh db)"
+
+expo-start = "(cd ../ama-app && npx expo start)"
+expo-android = "(cd ../ama-app && npx expo start --android)"
+expo-ios = "(cd ../ama-app && npx expo start --ios)"
+expo-web = "(cd ../ama-app && npx expo start --web)"
+
+cdktf-synth = "(cd ../ama-infra && npm run synth)"
+cdktf-get = "(cd ../ama-infra && npm run get)"
